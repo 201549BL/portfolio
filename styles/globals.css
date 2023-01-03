@@ -1,26 +1,59 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer base {
+  :root {
+    --max-width: 1000px;
 
-* {
-  box-sizing: border-box;
-}
+    --th-background: white;
+    --th-background-shaded: #cbd5e1;
+    --th-contrast: black;
+    --th-contrast-shaded: #334155;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+    --th-background-save: var(--th-background);
+    --th-background-shaded-save: var(--th-background-shaded);
+    --th-contrast-save: var(--th-contrast);
+    --th-contrast-shaded-save: var(--th-contrast-shaded);
   }
-  body {
-    color: white;
-    background: black;
+
+  [data-theme="dark"] {
+    --th-background: black;
+    --th-background-shaded: #334155;
+    --th-contrast: white;
+    --th-contrast-shaded: #cbd5e1;
   }
+
+  [data-theme="dark"] body {
+    background-color: var(--th-background);
+  }
+
+  .inverted {
+    --th-background: var(--th-contrast-save);
+    --th-background-shaded: var(--th-contrast-shaded-save);
+    --th-contrast: var(--th-background-save);
+    --th-contrast-shaded: var(--th-background-shaded-save);
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translatex(32px);
+    }
+  }
+
+  .dotted-background {
+    background: radial-gradient(
+      var(--th-background-shaded) 10%,
+      transparent 10%
+    );
+
+    background-size: 32px 32px;
+
+    /* animation: slide linear 1s infinite; */
+  }
+
+  /* TODO: prefered reduced motion */
 }
