@@ -8,6 +8,37 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%": {
+            transform: "rotate(0deg)",
+            transformOrigin: "bottom right",
+          },
+          "20%": {
+            transform: "rotate(-10deg)",
+            transformOrigin: "bottom right",
+          },
+          "40%": {
+            transform: "rotate(10deg)",
+            transformOrigin: "bottom right",
+          },
+          "60%": {
+            transform: "rotate(-10deg)",
+            transformOrigin: "bottom right",
+          },
+          "80%": {
+            transform: "rotate(10deg)",
+            transformOrigin: "bottom right",
+          },
+          "100%": {
+            transform: "rotate(0deg)",
+            transformOrigin: "bottom right",
+          },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out 1",
+      },
       colors: {
         "th-background": "var(--th-background)",
         "th-background-shaded": "var(--th-background-shaded)",

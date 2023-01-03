@@ -7,6 +7,7 @@ import profilePicture from "../../public/profile-pic.png";
 const CTA = () => {
   const imageRef = useRef(undefined);
   const textRef = useRef(undefined);
+  const emojiRef = useRef(undefined);
 
   const animatedBackgroundRef = useRef(undefined);
   const backgroundElements = useAnimatedBackground(animatedBackgroundRef);
@@ -83,13 +84,17 @@ const CTA = () => {
         </div>
         <div
           ref={textRef}
-          className="flex-1 sm:basis-1/2 flex flex-col items-center gap-4 md:gap-8 tracking-wide bg-th-background"
+          className="flex-1 sm:basis-1/2 flex flex-col items-center gap-4 md:gap-8 tracking-wide bg-th-background group"
         >
-          <h1 className=" flex justify-center gap-4 text-xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold sm:font-extrabold ">
-            👋 Hei på deg
+          <h1 className="flex justify-center gap-4 text-xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold sm:font-extrabold">
+            <span ref={emojiRef} className="group-hover:animate-wiggle">
+              👋
+            </span>{" "}
+            Hei på deg
           </h1>
           <p className="text-base xs:text-xl text-center w-fit font-medium ">
-            Jeg er en selvlært utvikler. Ta en titt på prosjektene mine nedenfor
+            Jeg er student ved USN og går IT og ledelse. Ta en titt på
+            prosjektene mine nedenfor
           </p>
         </div>
       </div>
