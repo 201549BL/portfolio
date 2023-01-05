@@ -11,7 +11,6 @@ const nextConfig = {
     nextImageExportOptimizer_exportFolderPath: "out",
     nextImageExportOptimizer_quality: 75,
     nextImageExportOptimizer_storePicturesInWEBP: true,
-    nextImageExportOptimizer_exportFolderPath: "nextImageExportOptimizer",
 
     // If you do not want to use blurry placeholder images, then you can set
     // nextImageExportOptimizer_generateAndUseBlurImages to false and pass
