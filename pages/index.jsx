@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { useEffect, useRef } from "react";
 import Card from "../components/card";
 import CTA from "../components/cta";
@@ -8,22 +8,22 @@ import HorizontalLine from "../components/shared/horizontal-line";
 import useAnimatedBackground from "../hooks/useAnimatedBackground";
 import ExternalLink from "../components/shared/external-link";
 
-import semesterImage1 from "../public/semester-oppgave/homepage.png";
-import semesterImage2 from "../public/semester-oppgave/navigationImage.png";
-import semesterImage3 from "../public/semester-oppgave/sourcesImage.png";
+import semesterImage1 from "../public/images/semester-oppgave/homepage.png";
+import semesterImage2 from "../public/images/semester-oppgave/navigationImage.png";
+import semesterImage3 from "../public/images/semester-oppgave/sourcesImage.png";
 
-import bingoImage1 from "../public/bingo-2/home.png";
-import bingoImage2 from "../public/bingo-2/room.png";
+import bingoImage1 from "../public/images/bingo-2/home.png";
+import bingoImage2 from "../public/images/bingo-2/room.png";
 
-import landingImage1 from "../public/landing-page/CTA.png";
-import landingImage2 from "../public/landing-page/stats.png";
-import landingImage3 from "../public/landing-page/register-email.png";
-import landingImage4 from "../public/landing-page/offerings.png";
+import landingImage1 from "../public/images/landing-page/CTA.png";
+import landingImage2 from "../public/images/landing-page/stats.png";
+import landingImage3 from "../public/images/landing-page/register-email.png";
+import landingImage4 from "../public/images/landing-page/offerings.png";
 
-import monnImage1 from "../public/monn/monn-home.png";
-import monnImage2 from "../public/monn/monn-values.png";
-import monnImage3 from "../public/monn/monn-news.png";
-import monnImage4 from "../public/monn/monn-blog.png";
+import monnImage1 from "../public/images/monn/monn-home.png";
+import monnImage2 from "../public/images/monn/monn-values.png";
+import monnImage3 from "../public/images/monn/monn-news.png";
+import monnImage4 from "../public/images/monn/monn-blog.png";
 
 export default function Home() {
   return (
@@ -58,7 +58,8 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage1}
                   alt="bilde av forsiden til nettsiden"
                   // width="1448"
@@ -72,7 +73,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage2}
                   alt="Bildet viser en prosjekt side"
                   // width="1448"
@@ -86,7 +88,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage3}
                   alt="Bildet viser en nyhets seksjon."
                   // width="1448"
@@ -101,7 +104,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage4}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -126,7 +130,8 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -140,7 +145,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -154,7 +160,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage3}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -188,7 +195,8 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={bingoImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   width="1448"
@@ -202,7 +210,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={bingoImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   width="1448"
@@ -233,7 +242,8 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
@@ -244,7 +254,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
@@ -255,7 +266,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage3}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
@@ -268,7 +280,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <Image
+                <ExportedImage
+                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage4}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
