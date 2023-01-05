@@ -59,7 +59,7 @@ export default function Home() {
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage1}
                   alt="bilde av forsiden til nettsiden"
                   // width="1448"
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage2}
                   alt="Bildet viser en prosjekt side"
                   // width="1448"
@@ -89,7 +89,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage3}
                   alt="Bildet viser en nyhets seksjon."
                   // width="1448"
@@ -105,7 +105,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage4}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -131,7 +131,7 @@ export default function Home() {
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -161,7 +161,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage3}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   // width="1448"
@@ -196,7 +196,7 @@ export default function Home() {
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={bingoImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   width="1448"
@@ -211,7 +211,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={bingoImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   width="1448"
@@ -243,7 +243,7 @@ export default function Home() {
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
@@ -255,7 +255,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
@@ -267,7 +267,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage3}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"
@@ -281,7 +281,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
                 <ExportedImage
-                  sizes="(max-width: 512px) 80vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage4}
                   alt="bilde av hjemesiden til semesteroppgaven"
                   placeholder="blur"

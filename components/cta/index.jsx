@@ -76,7 +76,7 @@ const CTA = () => {
           <ExportedImage
             src={profilePicture}
             alt="Profilbilde"
-            sizes="(max-width: 512px) 80vw, (max-width: 1024px) 50vw, (max-width: 1024px) 40vw, (max-width: 1536px) 33vw, 20vw"
+            sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, (max-width: 1024px) 40vw, (max-width: 1536px) 33vw, 20vw"
             className="filter grayscale rounded-full"
             priority
           />
