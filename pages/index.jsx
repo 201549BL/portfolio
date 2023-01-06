@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ExportedImage from "next-image-export-optimizer";
+
 import { useEffect, useRef } from "react";
 import Card from "../components/card";
 import CTA from "../components/cta";
@@ -24,6 +24,7 @@ import monnImage1 from "../public/images/monn/monn-home.png";
 import monnImage2 from "../public/images/monn/monn-values.png";
 import monnImage3 from "../public/images/monn/monn-news.png";
 import monnImage4 from "../public/images/monn/monn-blog.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -58,7 +59,7 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage1}
                   alt="bilde av forsiden til nettsiden"
@@ -73,7 +74,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage2}
                   alt="Bildet viser en prosjekt side"
@@ -88,7 +89,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage3}
                   alt="Bildet viser en nyhets seksjon."
@@ -104,7 +105,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={monnImage4}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -130,7 +131,7 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -145,7 +146,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -160,7 +161,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={semesterImage3}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -195,7 +196,7 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={bingoImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -210,7 +211,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={bingoImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -242,7 +243,7 @@ export default function Home() {
           popoverContent={
             <>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage1}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -254,7 +255,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage2}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -266,7 +267,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage3}
                   alt="bilde av hjemesiden til semesteroppgaven"
@@ -280,7 +281,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 xs:gap-4">
-                <ExportedImage
+                <Image
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, (max-width: 1536px) 50vw, 33vw"
                   src={landingImage4}
                   alt="bilde av hjemesiden til semesteroppgaven"

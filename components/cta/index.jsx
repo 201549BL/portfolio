@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 import useAnimatedBackground from "../../hooks/useAnimatedBackground";
 import profilePicture from "../../public/images/cta/profile-pic.png";
@@ -73,7 +73,7 @@ const CTA = () => {
           ref={imageRef}
           className="w-[80%] grow sm:w-full shrink overflow-hidden sm:basis-1/3 "
         >
-          <ExportedImage
+          <Image
             src={profilePicture}
             alt="Profilbilde"
             sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, (max-width: 1024px) 40vw, (max-width: 1536px) 33vw, 20vw"
