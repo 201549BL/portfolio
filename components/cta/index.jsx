@@ -45,7 +45,7 @@ const CTA = () => {
     imageRef.current.getAnimations({ subtree: true }).forEach((animation) => {
       animation.finished.then(() => {
         const { target } = animation.effect;
-        target.classList.remove("opacity-0", "-translate-y-10");
+        target.classList.remove("opacity-0");
         target.classList.add("opacity-100", "translate-y-0");
       });
 
@@ -84,7 +84,7 @@ const CTA = () => {
       <div className="max-w-screen-lg py-14 sm:py-20 px-10 flex flex-col items-center sm:flex-row sm:justify-center mx-auto gap-8 sm:gap-2 ">
         <div
           ref={imageRef}
-          className="w-[80%] grow sm:w-full shrink overflow-hidden sm:basis-1/3 "
+          className="w-[80%] grow sm:w-full shrink overflow-hidden sm:basis-1/3 opacity-0"
         >
           <Image
             src={profilePicture}
