@@ -9,8 +9,6 @@ const Header = ({ onContactClick }) => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme, resolvedTheme } = useTheme();
 
-  console.log(theme);
-
   useEffect(() => {
     setIsMounted(true);
 
