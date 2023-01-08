@@ -24,6 +24,7 @@ const CTA = () => {
           iterations: 1,
           fill: "forwards",
           easing: "ease",
+          delay: 1000,
         }
       )
       .pause();
@@ -37,12 +38,21 @@ const CTA = () => {
         duration: 1000,
         iterations: 1,
         easing: "ease",
-        delay: 1000,
         fill: "both",
       }
     );
 
     imageRef.current.getAnimations({ subtree: true }).forEach((animation) => {
+      animation.finished.then(() => {
+        const { target } = animation.effect;
+        target.classList.remove("opacity-0");
+        target.classList.add("opacity-100", "translate-y-0");
+      });
+
+      animation.play();
+    });
+
+    textRef.current.getAnimations({ subtree: true }).forEach((animation) => {
       animation.finished.then(() => {
         const { target } = animation.effect;
         target.classList.remove("opacity-0");
@@ -96,7 +106,7 @@ const CTA = () => {
         </div>
         <div
           ref={textRef}
-          className="flex-1 sm:basis-1/2 flex flex-col items-center gap-4 md:gap-8 tracking-wide bg-th-background group"
+          className="flex-1 sm:basis-1/2 flex flex-col items-center gap-4 md:gap-8 tracking-wide bg-th-background group opacity-0"
         >
           <h1 className="flex justify-center gap-4 text-xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold sm:font-extrabold">
             <span ref={emojiRef} className="group-hover:animate-wiggle">
