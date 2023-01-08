@@ -1,3 +1,4 @@
+import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 import useAnimatedBackground from "../../hooks/useAnimatedBackground";
@@ -9,21 +10,23 @@ const CTA = () => {
   const emojiRef = useRef(undefined);
 
   const animatedBackgroundRef = useRef(undefined);
-  const backgroundElements = useAnimatedBackground(animatedBackgroundRef);
+  useAnimatedBackground(animatedBackgroundRef);
 
   useEffect(() => {
-    imageRef.current.animate(
-      [
-        { opacity: 0, transform: "translateY(-2rem)" },
-        { opacity: 1, transform: "translateY(0)" },
-      ],
-      {
-        duration: 1000,
-        iterations: 1,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
+    imageRef.current
+      .animate(
+        [
+          { opacity: 0, transform: "translateY(-2rem)" },
+          { opacity: 1, transform: "translateY(0)" },
+        ],
+        {
+          duration: 1000,
+          iterations: 1,
+          fill: "forwards",
+          easing: "ease",
+        }
+      )
+      .pause();
 
     textRef.current.animate(
       [
@@ -38,6 +41,16 @@ const CTA = () => {
         fill: "both",
       }
     );
+
+    imageRef.current.getAnimations({ subtree: true }).forEach((animation) => {
+      animation.finished.then(() => {
+        const { target } = animation.effect;
+        target.classList.remove("opacity-0", "-translate-y-10");
+        target.classList.add("opacity-100", "translate-y-0");
+      });
+
+      animation.play();
+    });
 
     return () => {};
   }, []);
