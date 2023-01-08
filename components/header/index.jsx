@@ -7,7 +7,9 @@ import MoonIcon from "../icons/MoonIcon";
 
 const Header = ({ onContactClick }) => {
   const [isMounted, setIsMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+
+  console.log(theme);
 
   useEffect(() => {
     setIsMounted(true);
@@ -28,19 +30,31 @@ const Header = ({ onContactClick }) => {
         >
           Contact
         </ExternalLink>
-        <Button
-          style="hollow"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        >
-          <div className="flex items-center gap-2">
-            Theme{" "}
-            {isMounted && theme === "dark" ? (
-              <MoonIcon className="text-[1.5em]" />
-            ) : (
-              <SunIcon className="text-[1.5em]" />
-            )}
-          </div>
-        </Button>
+        {isMounted ? (
+          <Button
+            style="hollow"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            <div className="flex items-center gap-2">
+              <span>Theme</span>
+              {resolvedTheme === "dark" ? (
+                <MoonIcon className="text-[1.5em] animate-fadein" />
+              ) : (
+                <SunIcon className="text-[1.5em] animate-fadein" />
+              )}
+            </div>
+          </Button>
+        ) : (
+          <Button
+            style="hollow"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            <div className="flex items-center gap-2">
+              <span>Theme</span>
+              <MoonIcon className="text-[1.5em] opacity-0" />
+            </div>
+          </Button>
+        )}
       </div>
     </header>
   );

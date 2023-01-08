@@ -37,18 +37,16 @@ module.exports = {
         },
         fadein: {
           "0%": {
-            transform: "translateY(-10px)",
             opacity: 0,
           },
           "100%": {
-            transform: "translateY(0)",
             opacity: 100,
           },
         },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out 1",
-        fadein: "fadein 1s ease 1",
+        fadein: "fadein 200ms ease 1",
       },
       colors: {
         "th-background": "var(--th-background)",
